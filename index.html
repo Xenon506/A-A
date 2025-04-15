@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday Aarna ❤️</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -19,6 +18,13 @@
       text-align: center;
       padding: 2rem;
       font-family: 'Great Vibes', cursive;
+    }
+
+    .hero h1 {
+      color: #111; /* darker text */
+      font-weight: bold;
+      font-size: 3rem;
+      text-shadow: 2px 2px #ffb6c1;
     }
 
     .section {
@@ -44,16 +50,7 @@
     }
 
     .music-player {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-    }
-
-    audio {
-      width: 300px;
-      border-radius: 10px;
-      outline: none;
+      display: none; /* hide the audio control if you want it invisible */
     }
 
     .surprise-btn {
@@ -106,10 +103,10 @@
     </div>
   </div>
 
+  <!-- Hidden audio autoplay -->
   <div class="music-player">
-    <audio controls autoplay loop>
-      <!-- Replace the src below with your actual "lover.mp3" path -->
-      <source src="https://example.com/lover.mp3" type="audio/mpeg">
+    <audio autoplay loop>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
