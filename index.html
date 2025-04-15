@@ -6,6 +6,71 @@
   <title>Happy Birthday Aarna ❤️</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff0f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .section {
+      margin: 2rem;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .gallery img {
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .memories p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .music-player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    audio {
+      width: 300px;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .surprise-btn {
+      background-color: #ff69b4;
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .surprise-btn:hover {
+      background-color: #ff1493;
+    }
+  </style>
 </head>
 <body>
   <div class="hero">
@@ -42,17 +107,21 @@
   </div>
 
   <div class="music-player">
-  <audio controls autoplay loop>
-    <source src="lover.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-
+    <audio controls autoplay loop>
+      <!-- Replace the src below with your actual "lover.mp3" path -->
+      <source src="https://example.com/lover.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
   <div class="section">
     <button class="surprise-btn" onclick="showSurprise()">Surprise Me!</button>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    function showSurprise() {
+      alert("🎉 A big hug and a little magic... Happy Birthday Aarna! 🎈");
+    }
+  </script>
 </body>
 </html>
